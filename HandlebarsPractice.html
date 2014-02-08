@@ -4,19 +4,50 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="HandlebarsPractice.css">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/css/bootstrap.min.css">
   <title>Demo</title>
 </head>
 
 <body>
 
-<div class="container">
+<div id="product-container">
+<script id="product" type="handlebars">
 
-	
+	<div class="product">
+
+	 
+	 		<h1 class='title' id='titulo'>{{title}}</h1>
+
+	 		<img class='images' src={{image}}></img>
+	 		
+	 		<p class='price'>${{cost}}</p>
+
+	 		<button type=button class="wish" id="wishButton">Add to wishlist!</button>
+
+	</div>
+
+</script>
+</div>
+
+<div id="wishlistContainer">
 
 </div>
 
+<script id="wishlist" type="text/x-handlebars-template">
+
+		
+		{{#each titles}}
+				<ul>
+					<li>{{this}}</li>
+				</ul>
+		{{/each}}
+
+		<button type=button class="removeButton">Remove from wishlist</button>
+
+</script>
 <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-<script src='http//cdnjs.cloudflare.com/ajax/libs/gorillascript/0.9.10/gorillascript.min.js>'</script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.min.js'></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="productsdata.js"></script>
 <script src="HandlebarsPractice.js"></script>
 

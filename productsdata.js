@@ -1,3 +1,5 @@
+console.log('hello');
+
 var productsData = {
   productsList: [
     {
@@ -29,3 +31,17 @@ var productsData = {
     }
   ]
 }
+
+var Objective = function() {
+  title: name
+}
+
+var wishObj = new Objective();
+
+$('.wish').on('click', function(){
+  console.log('hello');
+
+  $('this').closest($('<h1>'))=wishObj.title
+})
+
+console.log(wishObj.title);

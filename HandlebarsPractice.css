@@ -1,0 +1,26 @@
+.title{
+	background-color: #D35400 ;
+	color: #ECF0F1;
+	font-family: helvetica , sans-serif;
+	padding:20px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.images{
+	margin: 0px auto;
+	padding-left:20%;
+	padding-top:10px;
+}
+
+.price{
+	font-size:32pt;
+	margin-left:22%;
+}
+
+.wish{
+	margin-left:22%;
+}
+
+.removeButton{
+	margin-bottom:50px;
+}
